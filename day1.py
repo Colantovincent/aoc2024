@@ -1,7 +1,7 @@
 def calcolaDistanza(lista1: list, lista2: list) -> int:
     shallow1, shallow2 = sorted(lista1), sorted(lista2)
     lung = len(shallow1)
-    return sum(abs(shallow1[i] * shallow2[i]) for i in range(lung))
+    return sum(abs(shallow1[i] - shallow2[i]) for i in range(lung))
 
 def calcolaSomiglianza(lista1: list, lista2: list) -> int:
     from collections import Counter
